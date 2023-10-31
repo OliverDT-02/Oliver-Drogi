@@ -44,21 +44,15 @@
       <div class="collapse navbar-collapse" id="navbar1">
         <ul class="navbar-nav ml-auto " style="margin-right: 4em;">
           <li class="nav-item two ">
-            <a class="nav-link " href="Home.html"> Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html"> Home </a>
           </li>
          
-          <li class="nav-item dropdown two">
-            <a class="nav-link selected dropdown-toggle" href="Projects.html" id="navbarDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="Projects.html#EngineeringPhysics">Engineering Physics</a>
-              <a class="dropdown-item" href="Projects.html#DataScience">Data Science</a>
-              <a class="dropdown-item" href="Projects.html#Research">Research</a>
-            </div>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="AboutMe.html">About me</a>
+            <a class="nav-link selected" href="projects.html">Projects <span class="sr-only">(current)</span> </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="aboutMe.html">About me</a>
           </li>
         </ul>
  
@@ -84,7 +78,7 @@
  
   <hr class="my-5" >
   <div class="project-block P1"  data-description="During my Engineering Physics degree I have worked on several projecs, in this section I showcase some of the most intesting ones I have worked on:"   >
-      <button class="skill-btn collapsed" data-toggle="collapse" data-target="#project1" aria-expanded="false" aria-controls="project1" >
+      <button class="skill-btn P collapsed" data-toggle="collapse" data-target="#project1" aria-expanded="false" aria-controls="project1" >
           <div class="centered-content">
               <h3>Engineering Physics</h3>
               <i class="fas fa-arrow-down arrow"></i>
@@ -194,7 +188,7 @@
  
   <hr class="my-5" >
   <div class="project-block P3"  data-description="Over the course of my studies I have been involved in different research programs, some of the projects in which I have worked are the following: "  >
-      <button class="skill-btn collapsed" data-toggle="collapse" data-target="#project3" aria-expanded="false" aria-controls="project3" >
+      <button class="skill-btn P collapsed" data-toggle="collapse" data-target="#project3" aria-expanded="false" aria-controls="project3" >
           <div class="centered-content">
               <h3>Research</h3>
               <i class="fas fa-arrow-down arrow"></i>
@@ -365,7 +359,7 @@
  
   <hr class="my-5" >
   <div class="project-block P2"  data-description="I have being interested in Data Science so I have taken some courses and have participated in some events. I have gather some projects in this area and the most relevant are the following:"  >
-      <button class="skill-btn collapsed" data-toggle="collapse" data-target="#project2" aria-expanded="false" aria-controls="project2" >
+      <button class="skill-btn P collapsed" data-toggle="collapse" data-target="#project2" aria-expanded="false" aria-controls="project2" >
           <div class="centered-content">
               <h3>Data Science</h3>
               <i class="fas fa-arrow-down arrow"></i>
@@ -417,7 +411,9 @@
         <!-- Text Column (6 grid units for medium screens and up) -->
         
         <div class="col-12 col-md-12">
-            <p> bla bla bla</p>
+            <p> I have had research experience in areas related with Data Science, the two projects are: "Mid-infrared Nano-imaging: A Neural Network Approach" 
+              and “Machine learning and image processing for the prediction of emotional states in educational contexts”, which were discussed in detal in the research <section class=""></section>
+</p>
         </div>
         
     </div> <!-- End of Bootstrap row -->
@@ -445,7 +441,7 @@
 
 <script>
 $(document).ready(function() {
-    $('.skill-btn').on('click', function() {
+    $('.skill-btn.P').on('click', function() {
         if (!$(this).hasClass('collapsed')) {
             // Find all expanded mini project buttons and trigger a click event on them to collapse
             $(this).parent().siblings('.collapse').find('.mini-project-btn:not(.collapsed)').each(function() {
